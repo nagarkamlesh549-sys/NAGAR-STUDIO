@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAGAR STUDIO — Fine Art Wedding Storytelling</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader Overlay -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="logo.png" alt="NAGAR STUDIO" class="loader-logo-img">
+      <div class="spinner"></div>
+      <div class="loader-text">Loading Experience... <span id="progress-text">0%</span></div>
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned Canvas Background -->
+  <canvas id="frame-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <img src="logo.png" alt="NAGAR STUDIO" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Inquire</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20wedding%20session." target="_blank" class="btn btn-outline">Check Availability</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Track Container -->
+  <div id="scroll-container">
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-content fade-in">
+        <div class="badge">
+          CINEMATIC WEDDING STORYTELLING
+        </div>
+        <h1 class="hero-title">
+          Capturing Every <br>
+          <span class="gold-text">Unscripted Moment</span>
+        </h1>
+        <p class="hero-sub">
+          Fine-art wedding cinema and editorial photography crafted to preserve your love story for generations.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20wedding%20session." target="_blank" class="btn btn-primary">Book via WhatsApp</a>
+          <a href="mailto:nagarstudio79@gmail.com" class="btn btn-glass">Email Us</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to view experience</span>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="glass-card story-card reveal-on-scroll">
+          <div class="badge">ABOUT NAGAR STUDIO</div>
+          <h2 class="card-title">Passionate Visual Storytelling</h2>
+          <p class="card-text">
+            Welcome to <strong>NAGAR STUDIO</strong>—where your most cherished moments are transformed into timeless visual art. Based in Mandideep & Bhopal, we specialize in high-definition wedding photography, cinematic pre-wedding films, maternity portraits, baby shoots, engagement celebrations, and 4K aerial drone coverage.
+          </p>
+          <p class="card-text" style="margin-top: 1rem;">
+            With a keen eye for candid emotion, natural light, and artistic detail, our team is dedicated to preserving every smile, vow, and celebration so you can relive your favorite memories for a lifetime.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">350+</div>
+              <div class="stat-label">Stories Captured</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">4K Cinema Quality</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="badge">OUR CRAFT</div>
+          <h2 class="section-title">Exclusive Photography & Film Services</h2>
+          <p class="section-sub">Comprehensive visual storytelling tailored to capture every special milestone of your life.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Wedding Photography -->
+          <div class="glass-card service-card reveal-on-scroll">
+            <div class="service-icon">💍</div>
+            <div class="service-badge">SIGNATURE CINEMA</div>
+            <h3 class="service-title">Wedding Photography</h3>
+            <p class="service-text">
+              Capturing raw emotions, grand rituals, and vows in high-definition cinematic detail.
+            </p>
+            <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20want%20to%20inquire%20about%20Wedding%20Photography." target="_blank" class="service-cta">
+              Inquire Now 💬
+            </a>
+          </div>
+
+          <!-- Service 2: Pre-Wedding Shoots -->
+          <div class="glass-card service-card reveal-on-scroll">
+            <div class="service-icon">👩‍❤️‍👨</div>
+            <div class="service-badge">EDITORIAL ROMANCE</div>
+            <h3 class="service-title">Pre-Wedding Shoots</h3>
+            <p class="service-text">
+              Concept-driven romantic storytelling in scenic outdoor landscapes & heritage locations.
+            </p>
+            <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20want%20to%20inquire%20about%20Pre-Wedding%20Shoots." target="_blank" class="service-cta">
+              Inquire Now 💬
+            </a>
+          </div>
+
+          <!-- Service 3: Maternity Shoot -->
+          <div class="glass-card service-card reveal-on-scroll">
+            <div class="service-icon">🤰</div>
+            <div class="service-badge">FINE-ART GRACE</div>
+            <h3 class="service-title">Maternity Shoot</h3>
+            <p class="service-text">
+              Celebrating the beauty and glow of motherhood with warm studio & outdoor portraiture.
+            </p>
+            <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20want%20to%20inquire%20about%20Maternity%20Shoot." target="_blank" class="service-cta">
+              Inquire Now 💬
+            </a>
+          </div>
+
+          <!-- Service 4: Baby Shoot -->
+          <div class="glass-card service-card reveal-on-scroll">
+            <div class="service-icon">👶</div>
+            <div class="service-badge">MILESTONES & JOY</div>
+            <h3 class="service-title">Baby Shoot</h3>
+            <p class="service-text">
+              Preserving your newborn's tender smiles, 1st birthday celebrations, and adorable moments.
+            </p>
+            <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20want%20to%20inquire%20about%20Baby%20Shoot." target="_blank" class="service-cta">
+              Inquire Now 💬
+            </a>
+          </div>
+
+          <!-- Service 5: Engagement Photography -->
+          <div class="glass-card service-card reveal-on-scroll">
+            <div class="service-icon">🥂</div>
+            <div class="service-badge">CEREMONIAL ELEGANCE</div>
+            <h3 class="service-title">Engagement Photography</h3>
+            <p class="service-text">
+              Timeless coverage of ring exchange ceremonies, family gatherings, & couple moments.
+            </p>
+            <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20want%20to%20inquire%20about%20Engagement%20Photography." target="_blank" class="service-cta">
+              Inquire Now 💬
+            </a>
+          </div>
+
+          <!-- Service 6: Drone and Gimbal Shoots -->
+          <div class="glass-card service-card reveal-on-scroll">
+            <div class="service-icon">🚁</div>
+            <div class="service-badge">4K AERIAL & MOTION</div>
+            <h3 class="service-title">Drone & Gimbal Shoots</h3>
+            <p class="service-text">
+              Breathtaking 4K aerial perspectives and ultra-smooth gimbal motion video coverage.
+            </p>
+            <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20want%20to%20inquire%20about%20Drone%20and%20Gimbal%20Shoots." target="_blank" class="service-cta">
+              Inquire Now 💬
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SHOWCASE SECTION -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="badge">OUR GALLERY</div>
+          <h2 class="section-title">Featured Portfolio</h2>
+          <p class="section-sub">Explore our curated collections across fine-art wedding and portraiture genres.</p>
+        </div>
+
+        <!-- Portfolio Category Filter Tabs -->
+        <div class="portfolio-tabs reveal-on-scroll">
+          <button class="tab-btn active" data-category="all">All Works</button>
+          <button class="tab-btn" data-category="bride">1. Bride Portrait</button>
+          <button class="tab-btn" data-category="pre-wedding">2. Pre-Wedding</button>
+          <button class="tab-btn" data-category="wedding-couple">3. Wedding Couple</button>
+          <button class="tab-btn" data-category="maternity">4. Maternity</button>
+          <button class="tab-btn" data-category="baby-shoot">5. Baby Shoot</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid reveal-on-scroll">
+          <!-- SECTION 1: BRIDE PORTRAIT (5 uploaded images) -->
+          <div class="portfolio-card" data-category="bride">
+            <div class="portfolio-img-wrapper">
+              <img src="images/bride_1.jpg" alt="Monochrome Bride Profile Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Bride Portrait</div>
+                <h3 class="portfolio-title">Monochrome Elegance</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="bride">
+            <div class="portfolio-img-wrapper">
+              <img src="images/bride_2.jpg" alt="Smiling Bride under Red Veil" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Bride Portrait</div>
+                <h3 class="portfolio-title">The Crimson Veil</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="bride">
+            <div class="portfolio-img-wrapper">
+              <img src="images/bride_3.jpg" alt="Royal Bridal Adornments" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Bride Portrait</div>
+                <h3 class="portfolio-title">Royal Bridal Jewels</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="bride">
+            <div class="portfolio-img-wrapper">
+              <img src="images/bride_4.jpg" alt="Veiled B&W Smile" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Bride Portrait</div>
+                <h3 class="portfolio-title">Timeless Grace</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="bride">
+            <div class="portfolio-img-wrapper">
+              <img src="images/bride_5.jpg" alt="Serene Red Bridal Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Bride Portrait</div>
+                <h3 class="portfolio-title">Golden Hour Serenity</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2: PRE-WEDDING (5 uploaded images) -->
+          <div class="portfolio-card" data-category="pre-wedding">
+            <div class="portfolio-img-wrapper">
+              <img src="images/prewedding_1.jpg" alt="Joyful Monochrome Couple Embrace" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Pre-Wedding</div>
+                <h3 class="portfolio-title">Joyful Monochrome</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="pre-wedding">
+            <div class="portfolio-img-wrapper">
+              <img src="images/prewedding_2.jpg" alt="Garden Walk Romance" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Pre-Wedding</div>
+                <h3 class="portfolio-title">Garden Walk Romance</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="pre-wedding">
+            <div class="portfolio-img-wrapper">
+              <img src="images/prewedding_3.jpg" alt="Scenic Lake & Boat Serenity" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Pre-Wedding</div>
+                <h3 class="portfolio-title">Scenic Lake Serenity</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="pre-wedding">
+            <div class="portfolio-img-wrapper">
+              <img src="images/prewedding_4.jpg" alt="Royal Crimson Train in Motion" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Pre-Wedding</div>
+                <h3 class="portfolio-title">Crimson Trail in Motion</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="pre-wedding">
+            <div class="portfolio-img-wrapper">
+              <img src="images/prewedding_5.jpg" alt="Double-Exposure Romantic Touch" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Pre-Wedding</div>
+                <h3 class="portfolio-title">Forehead Touch Romance</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3: WEDDING COUPLE (7 uploaded images) -->
+          <div class="portfolio-card" data-category="wedding-couple">
+            <div class="portfolio-img-wrapper">
+              <img src="images/wedding_1.jpg" alt="Our Future Collage Wedding Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Wedding Couple</div>
+                <h3 class="portfolio-title">Together Forever Collage</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="wedding-couple">
+            <div class="portfolio-img-wrapper">
+              <img src="images/wedding_2.jpg" alt="FOREVER Kanak & Mayank Wedding Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Wedding Couple</div>
+                <h3 class="portfolio-title">FOREVER — Kanak & Mayank</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="wedding-couple">
+            <div class="portfolio-img-wrapper">
+              <img src="images/wedding_3.jpg" alt="True Love Stories Mayank & Sandhya Wedding" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Wedding Couple</div>
+                <h3 class="portfolio-title">True Love Stories — Mayank & Sandhya</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="wedding-couple">
+            <div class="portfolio-img-wrapper">
+              <img src="images/wedding_4.jpg" alt="Night Fairy Lights Wedding Couple Embrace" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Wedding Couple</div>
+                <h3 class="portfolio-title">Night Canopy Embrace</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="wedding-couple">
+            <div class="portfolio-img-wrapper">
+              <img src="images/wedding_5.jpg" alt="Tender Bride Shoulder Lean Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Wedding Couple</div>
+                <h3 class="portfolio-title">Shoulder Lean Serenity</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="wedding-couple">
+            <div class="portfolio-img-wrapper">
+              <img src="images/wedding_6.jpg" alt="Royal Wedding Dip Pose Under Canopy" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Wedding Couple</div>
+                <h3 class="portfolio-title">Royal Wedding Dip</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="wedding-couple">
+            <div class="portfolio-img-wrapper">
+              <img src="images/wedding_7.jpg" alt="Ceremonial Sword Royal Couple Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Wedding Couple</div>
+                <h3 class="portfolio-title">Ceremonial Sword Royal Portrait</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 4: MATERNITY (5 uploaded images) -->
+          <div class="portfolio-card" data-category="maternity">
+            <div class="portfolio-img-wrapper">
+              <img src="images/maternity_1.jpg" alt="Intimate Forehead Kiss Maternity Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Maternity</div>
+                <h3 class="portfolio-title">Intimate Forehead Kiss</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="maternity">
+            <div class="portfolio-img-wrapper">
+              <img src="images/maternity_2.jpg" alt="Mother and Daughter with Baby Booties" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Maternity</div>
+                <h3 class="portfolio-title">Mother & Daughter Joy</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="maternity">
+            <div class="portfolio-img-wrapper">
+              <img src="images/maternity_3.jpg" alt="Creative Newspaper Shoot A New Chapter Begins" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Maternity</div>
+                <h3 class="portfolio-title">A New Chapter Begins</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="maternity">
+            <div class="portfolio-img-wrapper">
+              <img src="images/maternity_4.jpg" alt="Solo Maternity Glow Outdoor Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Maternity</div>
+                <h3 class="portfolio-title">Solo Maternity Glow</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="maternity">
+            <div class="portfolio-img-wrapper">
+              <img src="images/maternity_5.jpg" alt="Garden Couple Embrace Maternity" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Maternity</div>
+                <h3 class="portfolio-title">Garden Couple Embrace</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 5: BABY SHOOT (5 uploaded images) -->
+          <div class="portfolio-card" data-category="baby-shoot">
+            <div class="portfolio-img-wrapper">
+              <img src="images/babyshoot_1.jpg" alt="1st Birthday Tricycle Ride" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Baby Shoot</div>
+                <h3 class="portfolio-title">1st Birthday Joyride</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="baby-shoot">
+            <div class="portfolio-img-wrapper">
+              <img src="images/babyshoot_2.jpg" alt="Garden Crawl Golden Bokeh" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Baby Shoot</div>
+                <h3 class="portfolio-title">Garden Crawl Bokeh</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="baby-shoot">
+            <div class="portfolio-img-wrapper">
+              <img src="images/babyshoot_3.jpg" alt="Cheerful Standing Toddler" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Baby Shoot</div>
+                <h3 class="portfolio-title">Cheerful Toddler Laugh</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="baby-shoot">
+            <div class="portfolio-img-wrapper">
+              <img src="images/babyshoot_4.jpg" alt="Parents Cheek Kiss Family Portrait" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Baby Shoot</div>
+                <h3 class="portfolio-title">Parents Kiss of Love</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="baby-shoot">
+            <div class="portfolio-img-wrapper">
+              <img src="images/babyshoot_5.jpg" alt="Father Air Lift Family Joy" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-cat">Baby Shoot</div>
+                <h3 class="portfolio-title">Flying High Joy</h3>
+                <span class="view-btn">View Photo 🔍</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL & SLIDER -->
+    <div class="lightbox-modal" id="lightbox-modal">
+      <div class="lightbox-top-bar">
+        <button class="lightbox-back-btn" id="lightbox-back-btn">
+          <span class="back-arrow">←</span> Back to Website
+        </button>
+        <div class="lightbox-counter" id="lightbox-counter">Photo 1 of 5</div>
+        <button class="lightbox-close-icon" id="lightbox-close-icon" title="Close Lightbox">✕</button>
+      </div>
+
+      <!-- Side Navigation Arrows -->
+      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous Photo">‹</button>
+      <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next Photo">›</button>
+
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" class="lightbox-img">
+        <div class="lightbox-caption">
+          <div id="lightbox-cat" class="badge"></div>
+          <h3 id="lightbox-title"></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEWS SECTION -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="badge">CLIENT FEEDBACK</div>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-sub">Real reviews from our satisfied customers</p>
+        </div>
+
+        <div class="reviews-grid reveal-on-scroll">
+          <!-- Review Card 1 -->
+          <div class="glass-card review-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">Good quality photos they give to customer. Very satisfied with their work and professionalism.</p>
+            <div class="review-footer">
+              <div class="review-author">
+                <strong>Moment Capture</strong>
+                <span class="review-date">2 months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Card 2 -->
+          <div class="glass-card review-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">Reasonable rates and friendly staff. They made our wedding day memorable with their amazing photography.</p>
+            <div class="review-footer">
+              <div class="review-author">
+                <strong>Nishant Nagar</strong>
+                <span class="review-date">3 months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Card 3 -->
+          <div class="glass-card review-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">Awesome work, professional people. Highly recommend Nagar Studio for all photography needs.</p>
+            <div class="review-footer">
+              <div class="review-author">
+                <strong>Akash Choure</strong>
+                <span class="review-date">4 months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Card 4 -->
+          <div class="glass-card review-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">Best photography studio in Mandideep! They captured our pre-wedding shoot beautifully.</p>
+            <div class="review-footer">
+              <div class="review-author">
+                <strong>Priya Sharma</strong>
+                <span class="review-date">1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR TEAM / ARTISTS SECTION -->
+    <section class="section team-section" id="team">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="badge">THE ARTISTS BEHIND THE LENS</div>
+          <h2 class="section-title">Meet Our Creative Team</h2>
+          <p class="section-sub">Passionate professionals dedicated to preserving your most precious moments.</p>
+        </div>
+
+        <div class="team-grid reveal-on-scroll">
+          <!-- Member 1: Kamlesh Nagar (Owner) -->
+          <div class="glass-card team-card">
+            <div class="team-avatar-wrapper">
+              <img src="images/kamlesh_nagar.jpg" alt="Kamlesh Nagar (Owner) - Photographer" class="team-avatar avatar-kamlesh">
+            </div>
+            <h3 class="team-name">Kamlesh Nagar <span class="owner-tag">(Owner)</span></h3>
+            <p class="team-role">Photographer</p>
+          </div>
+
+          <!-- Member 2: Kartik Nagar (Owner) -->
+          <div class="glass-card team-card">
+            <div class="team-avatar-wrapper">
+              <img src="images/kartik_nagar.jpg" alt="Kartik Nagar (Owner) - Cinematographer & Video Editor" class="team-avatar avatar-kartik">
+            </div>
+            <h3 class="team-name">Kartik Nagar <span class="owner-tag">(Owner)</span></h3>
+            <p class="team-role">Cinematographer & Video Editor</p>
+          </div>
+
+          <!-- Member 3: Golu Vishwakarma -->
+          <div class="glass-card team-card">
+            <div class="team-avatar-wrapper">
+              <img src="images/golu_vishwakarma.jpg" alt="Golu Vishwakarma - Graphic Designer / Album Designer" class="team-avatar avatar-golu">
+            </div>
+            <h3 class="team-name">Golu Vishwakarma</h3>
+            <p class="team-role">Graphic Designer / Album Designer</p>
+          </div>
+
+          <!-- Member 4: Raj Tiwari -->
+          <div class="glass-card team-card">
+            <div class="team-avatar-wrapper">
+              <img src="images/raj_tiwari.jpg" alt="Raj Tiwari - Drone Operator" class="team-avatar avatar-raj">
+            </div>
+            <h3 class="team-name">Raj Tiwari</h3>
+            <p class="team-role">Drone Operator</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT INQUIRY SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="glass-card contact-card reveal-on-scroll">
+          <div class="badge">GET IN TOUCH</div>
+          <h2 class="card-title">Let’s Tell Your Story</h2>
+          <p class="card-sub">Now reserving dates for the 2026 / 2027 wedding seasons worldwide.</p>
+
+          <!-- Direct Booking Quick Links -->
+          <div class="direct-booking-grid">
+            <a href="https://wa.me/918103383722?text=Hi%20Nagar%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20wedding%20session." target="_blank" class="booking-option whatsapp-option">
+              <span class="booking-icon">💬</span>
+              <div>
+                <strong>WhatsApp Booking</strong>
+                <span>+91 8103383722</span>
+              </div>
+            </a>
+            <a href="mailto:nagarstudio79@gmail.com" class="booking-option email-option">
+              <span class="booking-icon">✉️</span>
+              <div>
+                <strong>Email Booking</strong>
+                <span>nagarstudio79@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://maps.google.com/?q=Ews+179+Patel+Nagar+Ward+Number+21+Mandideep+Bhopal+Madhya+Pradesh+462046" target="_blank" class="booking-option location-option">
+              <span class="booking-icon">📍</span>
+              <div>
+                <strong>Visit Our Studio</strong>
+                <span>Ews 179, Patel Nagar, Mandideep</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="divider-text"><span>or send a direct message</span></div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="Full Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="email@domain.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Event Date</label>
+                <input type="date" id="date">
+              </div>
+              <div class="form-group">
+                <label for="location">Location / Venue</label>
+                <input type="text" id="location" placeholder="City, Country or Venue">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Us About Your Celebration</label>
+              <textarea id="message" rows="4" placeholder="Share your vision, estimated guest count, or any special requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Send via WhatsApp 💬
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="logo.png" alt="NAGAR STUDIO" class="footer-logo-img">
+          <p>Preserving timeless love stories through cinematic art.</p>
+        </div>
+        <div class="footer-address">
+          <span class="loc-pin">📍</span>
+          <span>Ews 179, Patel Nagar, Ward Number 21, Mandideep, Bhopal, Madhya Pradesh 462046</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/nagar_studio_photography_" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@nagarstudio79" target="_blank">YouTube</a>
+          <a href="https://wa.me/918103383722" target="_blank">WhatsApp</a>
+          <a href="mailto:nagarstudio79@gmail.com">Email</a>
+        </div>
+        <div class="footer-copy">
+          © 2026 NAGAR STUDIO. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
