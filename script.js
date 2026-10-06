@@ -2,16 +2,12 @@
   const TOTAL_FRAMES = 176;
   const canvas = document.getElementById('frame-canvas');
   const ctx = canvas.getContext('2d');
-  const loader = document.getElementById('loader');
-  const progressBar = document.getElementById('progress-bar');
-  const progressText = document.getElementById('progress-text');
 
   const images = [];
   let loadedCount = 0;
   let currentFrame = 0;
   let targetFrame = 0;
   let lastDrawnFrame = -1;
-  let isLoaded = false;
 
   // Frame path generator: frame_000001.jpg ... frame_000176.jpg
   function getFramePath(index) {
@@ -19,7 +15,7 @@
     return `frame_${frameNum}.jpg`;
   }
 
-  // Preload all 176 frames
+  // Preload all 176 frames in background
   function preloadFrames() {
     for (let i = 0; i < TOTAL_FRAMES; i++) {
       const img = new Image();
@@ -27,39 +23,21 @@
 
       img.onload = () => {
         loadedCount++;
-        const percent = Math.floor((loadedCount / TOTAL_FRAMES) * 100);
-        
-        if (progressBar) progressBar.style.width = `${percent}%`;
-        if (progressText) progressText.textContent = `${percent}%`;
 
-        // Render first frame immediately
-        if (i === 0 && !isLoaded) {
+        // Render first frame as soon as it arrives
+        if (i === 0) {
           resizeCanvas();
           drawFrame(0);
-        }
-
-        if (loadedCount === TOTAL_FRAMES) {
-          onAllFramesLoaded();
         }
       };
 
       img.onerror = () => {
         console.error(`Failed to load frame ${i + 1}`);
         loadedCount++;
-        if (loadedCount === TOTAL_FRAMES) {
-          onAllFramesLoaded();
-        }
       };
 
       images.push(img);
     }
-  }
-
-  function onAllFramesLoaded() {
-    isLoaded = true;
-    setTimeout(() => {
-      if (loader) loader.classList.add('loaded');
-    }, 200);
   }
 
   // Canvas High-DPI Resizing
